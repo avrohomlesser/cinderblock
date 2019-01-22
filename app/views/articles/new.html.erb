@@ -6,7 +6,7 @@
   The following errors prevented the article from breing created
 </h2>
 <% @article.errors.full_messages.each do |msg| %>
-  <% msg %>
+  <%= msg %>
   <% end %>
 
 <% end %>
