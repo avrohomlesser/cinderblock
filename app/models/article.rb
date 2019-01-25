@@ -1,5 +1,7 @@
 
 class Article < ApplicationRecord
+  belongs_to :user
   validates :article, presence: true, length:{minimum: 5, maximum: 50}
-  
+    validates :description, presence: true, length:{minimum: 5, maximum: 50}
+  validates :user_id, presence: true
 end
